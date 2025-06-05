@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <script src = "todo.js"></script>
+    <link rel = "stylesheet" href = "todos.css">
+</head>
+<body>
+    <a href = "#">Home</a>
+    <a href = "#">About</a>
+    <a href = "#">Services</a>
+    <a href = "#">Help</a>
+    <div>
+    <h1>TODOs List</h1>
+    <label>Title</label><br><input type = "text" id = "todo"><br>
+    <label>Description</label><br><textarea type= "text" id = "description"></textarea><br>
+    <label>Date</label><br><input type = "date" id = "date"><br>
+    <button onclick = "update()" class= "initial">Add to list</button>
+    <button onclick = "clr()" class= "initial">Clear list</button>
+    </div>
+    <table>
+        <tr>
+        <th>S.N.</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Action</th>
+        </tr>
+        <tbody id = "add"></tbody>
+    </table> 
+</body>
+</html>
